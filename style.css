@@ -1,0 +1,48 @@
+.button
+{
+	display: inline-block;
+	margin: 50px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	cursor: pointer;
+
+	box-shadow: 0 3px 15px rgba(0, 0, 0, .25);
+}
+
+.button:hover
+{
+	box-shadow: inset 0 0 15px rgba(0, 0, 0, .2);
+}
+
+.button:after
+{
+	content: '';
+	width: 100px;
+	height: 100px;
+	display: block;
+	opacity: .7;
+}
+
+.button-settings:after
+{
+	background: url(icons/icons8-settings-filled.png) center no-repeat;
+	background-size: 40%;
+}
+
+.button-photo:after
+{
+	background: url(icons/icons8-camera.png) center no-repeat;
+	background-size: 40%;
+}
+
+.button-link:after
+{
+	background: url(icons/icons8-link.png) center no-repeat;
+	background-size: 40%;
+}
+
+.button:hover:after
+{
+	background-position: center 52%;
+}
